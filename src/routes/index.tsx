@@ -6,6 +6,7 @@ import coophubImg from "@/assets/work-coophub.jpg";
 import quicktellerImg from "@/assets/work-quickteller.jpg";
 import ajovaultImg from "@/assets/work-ajovault.jpg";
 import { projects } from "@/data/projects";
+import cvAsset from "@/assets/cv.pdf.asset.json";
 import { Reveal, SectionLabel, SiteFooter, SiteHeader, TechTag } from "@/components/site-chrome";
 
 export const Route = createFileRoute("/")({
@@ -178,7 +179,7 @@ function Hero() {
             className="animate-rise mt-3 max-w-md text-sm leading-relaxed text-muted-foreground"
             style={{ animationDelay: "260ms" }}
           >
-            Nearly a decade across banking, fintech and enterprise technology — building APIs,
+            Over a decade across banking, fintech and enterprise technology — building APIs,
             distributed systems, financial platforms and production software.
           </p>
           <div className="animate-rise mt-8 flex flex-wrap gap-3" style={{ animationDelay: "320ms" }}>
@@ -196,10 +197,17 @@ function Hero() {
             >
               Connect on LinkedIn
             </a>
+            <a
+              href={cvAsset.url}
+              download="Akinkunmi_Okunola_CV.pdf"
+              className="rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
+            >
+              Download CV
+            </a>
           </div>
           <div className="animate-rise mt-10 flex flex-wrap gap-10 text-sm" style={{ animationDelay: "380ms" }}>
             <div>
-              <div className="font-display text-2xl text-foreground">7+</div>
+              <div className="font-display text-2xl text-foreground">10+</div>
               <div className="text-muted-foreground">Years of engineering</div>
             </div>
             <div>
@@ -248,7 +256,7 @@ function Hero() {
 /* ---------------------------- Metrics ----------------------------- */
 
 const metrics = [
-  { value: "7+", label: "Years of professional software engineering" },
+  { value: "10+", label: "Years of professional software engineering" },
   { value: "10,000+", label: "Businesses supported through ALAT for Business" },
   { value: "50+", label: "APIs across major enterprise & fintech platforms" },
   {
@@ -561,28 +569,40 @@ function StackAndBuilding() {
 
 const timeline = [
   {
-    company: "SafeTransact Integrated Services Ltd",
+    company: "Safe Transact Ltd",
     title: "Technical Lead",
-    period: "December 2025 – Present",
-    body: "Building AjoVault — product design, backend architecture and delivery for a community finance platform.",
+    period: "February 2026 – Present",
+    body: "Founded and lead engineering for AjoVault — product design, backend architecture and delivery for a cooperative-savings fintech platform, leading a team of 4 engineers.",
   },
   {
     company: "Wema Bank / ALAT",
     title: "Senior Software Engineer / Technical Lead",
     period: "February 2021 – May 2026",
-    body: "ALAT for Business backend evolution and, from 2024, Lead Engineer on CoopHub — coordinating a five-person engineering team with three direct reports.",
+    body: "ALAT for Business backend evolution and Technical Lead on CoopHub — coordinating a five-person engineering team and mentoring three backend developers.",
   },
   {
-    company: "Interswitch",
-    title: "Software Engineer / Founding Developer",
-    period: "July 2019 – February 2021",
-    body: "Founding developer on Quickteller for Business — early-stage microservices in .NET Core 2.1/2.2.",
-  },
-  {
-    company: "NexTekk / NexQuiz",
+    company: "Interswitch Group",
     title: "Software Engineer",
-    period: "Earlier career",
-    body: "Assessment platform engineering — .NET Core, Angular, Identity Server, MongoDB and distributed workflows.",
+    period: "July 2019 – January 2021",
+    body: "Founding backend developer on Quickteller for Business — early-stage microservices in .NET Core 2.1/2.2, plus Quickteller Rewards loyalty services.",
+  },
+  {
+    company: "Enov8 Solutions Ltd",
+    title: "Software Engineer",
+    period: "January 2018 – June 2019",
+    body: "Enterprise web applications and backend services for clients across multiple industries — C#, ASP.NET, SQL Server and Entity Framework.",
+  },
+  {
+    company: "NexTekk Consulting",
+    title: "Software Developer",
+    period: "June 2016 – December 2017",
+    body: "Enterprise software for banking and business automation — backend services, APIs and database components in C# and SQL Server.",
+  },
+  {
+    company: "Powersoft Integrated Solutions",
+    title: "Software Developer",
+    period: "November 2014 – May 2016",
+    body: "Enterprise applications on Microsoft .NET — database objects, stored procedures and backend services in SQL Server.",
   },
 ];
 
@@ -666,9 +686,12 @@ function Experience() {
                 <div className="mt-4 text-sm font-semibold text-foreground">
                   B.Sc. Computer Science with Mathematics
                 </div>
-                <div className="text-sm text-muted-foreground">Obafemi Awolowo University</div>
+                <div className="text-sm text-muted-foreground">Obafemi Awolowo University, Ile-Ife</div>
                 <div className="mt-4 text-sm font-semibold text-foreground">
-                  KCNA — Kubernetes and Cloud Native Associate
+                  Microsoft Certified Professional
+                </div>
+                <div className="mt-1 text-sm font-semibold text-foreground">
+                  Microsoft Azure Certifications
                 </div>
               </div>
             </Reveal>
@@ -782,14 +805,29 @@ function Contact() {
             I'm open to conversations about senior engineering, technical leadership, backend
             systems, fintech, enterprise technology and challenging software engineering problems.
           </p>
-          <a
-            href="https://linkedin.com/in/akinkunmi-okunola"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="mt-8 inline-block rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-foreground/30 hover:bg-panel"
-          >
-            linkedin.com/in/akinkunmi-okunola
-          </a>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href="mailto:akinkunmi.okunola@gmail.com"
+              className="inline-block rounded-full bg-gradient-to-r from-brand to-accent px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              akinkunmi.okunola@gmail.com
+            </a>
+            <a
+              href="https://linkedin.com/in/akinkunmi-okunola"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-block rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-foreground/30 hover:bg-panel"
+            >
+              linkedin.com/in/akinkunmi-okunola
+            </a>
+            <a
+              href={cvAsset.url}
+              download="Akinkunmi_Okunola_CV.pdf"
+              className="inline-block rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
+            >
+              Download CV
+            </a>
+          </div>
         </Reveal>
         <Reveal delay={120}>
           <div className="rounded-2xl border border-border bg-card p-8">
