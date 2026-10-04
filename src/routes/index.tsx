@@ -685,12 +685,12 @@ function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    const next: Record<string, string> = {};
+    const next: { name?: string; email?: string; message?: string } = {};
     if (!name.trim()) next.name = "Please enter your name.";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) next.email = "Please enter a valid email address.";
     if (message.trim().length < 10) next.message = "Please include a short message (at least 10 characters).";
