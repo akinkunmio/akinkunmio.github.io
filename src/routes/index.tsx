@@ -535,8 +535,8 @@ function StackAndBuilding() {
             <h2 className="heading-display mt-3 text-2xl text-foreground md:text-3xl">AjoVault</h2>
             <p className="mt-3 text-sm leading-relaxed text-foreground/85">
               A community finance platform digitising informal group savings — Ajo, Esusu, Adashe and
-              cooperative savings — for Nigeria and eventually West Africa. Built through SafeTransact
-              Integrated Services Ltd, where I serve as Technical Lead.
+cooperative savings — for Nigeria and eventually West Africa. Built through Safe Transact
+              Ltd, where I serve as Technical Lead.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-foreground/85">
               The MVP is complete and being tested with pilot groups.

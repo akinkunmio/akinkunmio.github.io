@@ -45,14 +45,22 @@ export function SiteFooter() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-muted-foreground md:flex-row">
         <span className="font-display text-lg uppercase text-foreground">Akinkunmi Okunola</span>
         <span>Senior Software Engineer &amp; Technical Lead · Lagos, Nigeria</span>
-        <a
-          href="https://linkedin.com/in/akinkunmi-okunola"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="font-medium text-accent transition-opacity hover:opacity-80"
-        >
-          linkedin.com/in/akinkunmi-okunola
-        </a>
+        <div className="flex flex-wrap items-center gap-4">
+          <a
+            href="mailto:akinkunmi.okunola@gmail.com"
+            className="font-medium text-accent transition-opacity hover:opacity-80"
+          >
+            akinkunmi.okunola@gmail.com
+          </a>
+          <a
+            href="https://linkedin.com/in/akinkunmi-okunola"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="font-medium text-accent transition-opacity hover:opacity-80"
+          >
+            linkedin.com/in/akinkunmi-okunola
+          </a>
+        </div>
       </div>
     </footer>
   );
