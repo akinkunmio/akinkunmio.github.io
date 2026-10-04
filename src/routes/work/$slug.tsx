@@ -52,7 +52,7 @@ function CaseStudy() {
   }
 
   const currentIndex = projects.findIndex((p) => p.slug === slug);
-  const nextProject = projects[(currentIndex + 1) % projects.length];
+  const nextProject = projects[(currentIndex + 1) % projects.length] ?? projects[0]!;
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-background font-sans text-foreground">
