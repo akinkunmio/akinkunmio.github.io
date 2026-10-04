@@ -235,9 +235,9 @@ export const projects: Project[] = [
     title: "AjoVault",
     subtitle: "Digitising community finance for informal savings groups",
     category: "Community Finance",
-    company: "SafeTransact Integrated Services Ltd",
+    company: "Safe Transact Ltd",
     role: "Technical Lead",
-    period: "December 2025 – Present",
+    period: "February 2026 – Present",
     summary:
       "My current product build: a community finance platform digitising informal group savings — Ajo, Esusu, Adashe and cooperative savings — for Nigeria and eventually West Africa.",
     tech: ["C# / .NET", "React", "Microservices-oriented architecture", "SQL Server / Azure", "Paystack", "JWT", "xUnit", "Render / Vercel / Azure"],
@@ -248,7 +248,7 @@ export const projects: Project[] = [
     ],
     story: [
       "Informal savings groups run on trust, WhatsApp threads, handwritten records and cash — and they work, mostly, until someone loses the notebook. AjoVault digitises how these groups operate: members, groups, contributions, wallets and payments, records and reporting in a single flow.",
-      "I am building this through SafeTransact Integrated Services Ltd, where I serve as Technical Lead. The MVP is complete and currently being tested with pilot groups — 10 Ajo groups and over 100 members. That is a pilot, not nationwide adoption, and the product decisions reflect that: earn trust group by group.",
+      "I am building this through Safe Transact Ltd, where I serve as Technical Lead. The MVP is complete and currently being tested with pilot groups — 10 Ajo groups and over 100 members. That is a pilot, not nationwide adoption, and the product decisions reflect that: earn trust group by group.",
       "The long-term vision is financial infrastructure for underserved communities — and eventually, data-driven financial access built on a foundation of reliable savings records.",
     ],
     challenge:
