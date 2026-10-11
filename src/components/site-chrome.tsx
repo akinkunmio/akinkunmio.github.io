@@ -60,6 +60,14 @@ export function SiteFooter() {
           >
             linkedin.com/in/akinkunmi-okunola
           </a>
+          <a
+            href="https://www.github.com/akinkunmio"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="font-medium text-accent transition-opacity hover:opacity-80"
+          >
+            github.com/akinkunmio
+          </a>
         </div>
       </div>
     </footer>

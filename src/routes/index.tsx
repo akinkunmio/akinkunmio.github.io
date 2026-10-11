@@ -821,6 +821,14 @@ function Contact() {
               linkedin.com/in/akinkunmi-okunola
             </a>
             <a
+              href="https://www.github.com/akinkunmio"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-block rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-foreground/30 hover:bg-panel"
+            >
+              github.com/akinkunmio
+            </a>
+            <a
               href={cvAsset.url}
               download="Akinkunmi_Okunola_CV.pdf"
               className="inline-block rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
