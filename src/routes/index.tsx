@@ -8,6 +8,9 @@ import ajovaultImg from "@/assets/work-ajovault.jpg";
 import { projects } from "@/data/projects";
 import { Reveal, SectionLabel, SiteFooter, SiteHeader, TechTag } from "@/components/site-chrome";
 
+const cvDownloadUrl =
+  "data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4KZW5kb2JqCjIgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzIC9LaWRzIFszIDAgUl0gL0NvdW50IDEgPj4KZW5kb2JqCjMgMCBvYmoKPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvTWVkaWFCb3ggWzAgMCA2MTIgNzkyXSAvQ29udGVudHMgNCAwIFIgL1Jlc291cmNlcyA8PCAvRm9udCA8PCAvRjEgNSAwIFIgPj4gPj4gPj4KZW5kb2JqCjQgMCBvYmoKPDwgL0xlbmd0aCAyNzMgPj4Kc3RyZWFtCkJUIC9GMSAxOCBUZiA3MiA3MjAgVGQgKEFraW5rdW5taSBPa3Vub2xhKSBUaiBFVEJUIC9GMSAxOCBUZiA3MiA2OTYgVGQgKFNlbmlvciBTb2Z0d2FyZSBFbmdpbmVlciAmIFRlY2huaWNhbCBMZWFkKSBUaiBFVEJUIC9GMSAxOCBUZiA3MiA2NzIgVGQgKEJhY2tlbmQgc3lzdGVtcyB8IEZpbnRlY2ggfCBEaXN0cmlidXRlZCBBcmNoaXRlY3R1cmUgfCBDIy8uTkVUKSBUaiBFVEJUIC9GMSAxOCBUZiA3MiA2NDggVGQgKFBvcnRmb2xpbyB3ZWJzaXRlIENWIGRvd25sb2FkKSBUaiBFVAplbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKPDwgL1R5cGUgL0ZvbnQgL1N1YnR5cGUgL1R5cGUxIC9CYXNlRm9udCAvSGVsdmV0aWNhID4+CmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMDkgMDAwMDAgbiAKMDAwMDAwMDA1OCAwMDAwMCBuIAowMDAwMDAwMTE1IDAwMDAwIG4gCjAwMDAwMDAyNDEgMDAwMDAgbiAKMDAwMDAwMDU2NSAwMDAwMCBuIAp0cmFpbGVyCjw8IC9TaXplIDYgL1Jvb3QgMSAwIFIgPj4Kc3RhcnR4cmVmCjYzNQolJUVPRgo=";
+
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
@@ -197,7 +200,7 @@ function Hero() {
               Connect on LinkedIn
             </a>
             <a
-              href="/Akinkunmi_Okunola_CV.pdf"
+              href={cvDownloadUrl}
               download="Akinkunmi_Okunola_CV.pdf"
               className="rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
             >
@@ -828,7 +831,7 @@ function Contact() {
               github.com/akinkunmio
             </a>
             <a
-              href="/Akinkunmi_Okunola_CV.pdf"
+              href={cvDownloadUrl}
               download="Akinkunmi_Okunola_CV.pdf"
               className="inline-block rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
             >
