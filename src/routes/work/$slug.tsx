@@ -79,6 +79,16 @@ function CaseStudy() {
               {project.title}
             </h1>
             <p className="mt-4 max-w-[60ch] text-lg text-muted-foreground">{project.subtitle}</p>
+            {project.website && (
+              <a
+                href={project.website}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="mt-6 inline-flex items-center rounded-full border border-accent/40 bg-accent/10 px-4 py-2 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
+              >
+                Visit official site ↗
+              </a>
+            )}
           </Reveal>
           <Reveal delay={120}>
             <dl className="mt-10 grid gap-6 border-y border-border py-6 sm:grid-cols-3">

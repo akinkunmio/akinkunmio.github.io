@@ -12,6 +12,7 @@ export interface Project {
   role: string;
   period: string;
   summary: string;
+  website?: string;
   tech: string[];
   impact: string[];
   story: string[];
@@ -32,6 +33,7 @@ export const projects: Project[] = [
     period: "2021 – 2026",
     summary:
       "I played a significant engineering role in evolving the backend from an initial user module into a broader business banking platform — APIs, microservices, integrations and production engineering at serious scale.",
+    website: "https://business.alat.ng/",
     tech: [
       "C#",
       "WCF",
@@ -90,6 +92,7 @@ export const projects: Project[] = [
     period: "2024 – 2026",
     summary:
       "I joined CoopHub in 2024 as the application was inherited before going live, and my role evolved into Lead Engineer — coordinating delivery, reviewing backend work and mentoring a five-person engineering team.",
+    website: "https://coophub.alat.ng/",
     tech: ["C#", ".NET", "REST APIs", "SQL Server", "Azure DevOps", "Scrum"],
     impact: [
       "Led engineering delivery within a five-person team, with three direct reports",
@@ -130,6 +133,7 @@ export const projects: Project[] = [
     period: "July 2019 – February 2021",
     summary:
       "As a founding developer on Quickteller for Business at Interswitch, I built backend microservices for a business payments platform in its early stages, working with .NET Core 2.1/2.2.",
+    website: "https://business.quickteller.com",
     tech: ["C#", ".NET Core 2.1/2.2", "Microservices", "REST APIs", "SQL Server", "Git"],
     impact: [
       "Founding-stage backend engineering on a business payments platform",
@@ -240,6 +244,7 @@ export const projects: Project[] = [
     period: "February 2026 – Present",
     summary:
       "My current product build: a community finance platform digitising informal group savings — Ajo, Esusu, Adashe and cooperative savings — for Nigeria and eventually West Africa.",
+    website: "https://www.ajovault.ng/",
     tech: ["C# / .NET", "React", "Microservices-oriented architecture", "SQL Server / Azure", "Paystack", "JWT", "xUnit", "Render / Vercel / Azure"],
     impact: [
       "MVP completed and being tested with pilot groups",
