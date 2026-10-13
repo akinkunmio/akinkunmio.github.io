@@ -6,7 +6,6 @@ import coophubImg from "@/assets/work-coophub.jpg";
 import quicktellerImg from "@/assets/work-quickteller.jpg";
 import ajovaultImg from "@/assets/work-ajovault.jpg";
 import { projects } from "@/data/projects";
-import cvAsset from "@/assets/cv.pdf.asset.json";
 import { Reveal, SectionLabel, SiteFooter, SiteHeader, TechTag } from "@/components/site-chrome";
 
 export const Route = createFileRoute("/")({
@@ -198,7 +197,7 @@ function Hero() {
               Connect on LinkedIn
             </a>
             <a
-              href={cvAsset.url}
+              href="/Akinkunmi_Okunola_CV.pdf"
               download="Akinkunmi_Okunola_CV.pdf"
               className="rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
             >
@@ -829,7 +828,7 @@ function Contact() {
               github.com/akinkunmio
             </a>
             <a
-              href={cvAsset.url}
+              href="/Akinkunmi_Okunola_CV.pdf"
               download="Akinkunmi_Okunola_CV.pdf"
               className="inline-block rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition-colors hover:bg-accent/20"
             >
